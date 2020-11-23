@@ -112,7 +112,7 @@ sns.boxplot(x=ma_df['FullCashValue'])
 [.](<a href="https://imgur.com/dpRlcC5"><img src="https://i.imgur.com/dpRlcC5.jpg" title="source: imgur.com" /></a>)
  - Not too bad at all, we have decent sized normalized dataset that I believe we can work with 
 
-## Lets check for trends ##
+## Lets check for trends with our uncleaned data to see if there is a trend for the parameters we're interested in ##
 
 ```python
 sns.pairplot(ma_df[["LivableSqFootage", "ConstructionYear", "LandSize", 'FullCashValue' ]], diag_kind="kde")
