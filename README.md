@@ -15,7 +15,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 from sklearn.metrics import r2_score, explained_variance_score, mean_absolute_error, mean_squared_error
 ```
 
-[.]()
+[.](<a href="https://imgur.com/sG22Tv5"><img src="https://i.imgur.com/sG22Tv5.jpg" title="source: imgur.com" /></a>)
 
 ## Normalizing the data will require us to use get dummies for both construction year and zip code ##
 
@@ -84,7 +84,7 @@ RMSE score:       502,073,729.14
 sns.boxplot(x=ma_df['FullCashValue'])
 ```
 
-[.]()
+[.](<a href="https://imgur.com/kF9Ykhh"><img src="https://i.imgur.com/kF9Ykhh.jpg" title="source: imgur.com" /></a>)
 
 ## Lets take the easiest steps first then go further if necessary ##
 
@@ -92,7 +92,7 @@ sns.boxplot(x=ma_df['FullCashValue'])
 ma_df = ma_df[ma_df.FullCashValue != 0]
 sns.boxplot(x=ma_df['FullCashValue'])
 ``` 
-[.]()
+[.](<a href="https://imgur.com/Y32zm4I"><img src="https://i.imgur.com/Y32zm4I.jpg" title="source: imgur.com" /></a>)
  - Better
  
 ## Ok lets get a bit fancier with our cleaning, there are a miriade of ways to accomplish this however this one is easiest to understand at first viewing ##
@@ -109,7 +109,7 @@ ma_df = ma_df[~((ma_df[cols] < (Q1 - 1.5 * IQR)) |(ma_df[cols] > (Q3 + 1.5 * IQR
 sns.boxplot(x=ma_df['FullCashValue'])
 ```
 
-[.]()
+[.](<a href="https://imgur.com/dpRlcC5"><img src="https://i.imgur.com/dpRlcC5.jpg" title="source: imgur.com" /></a>)
  - Not too bad at all, we have decent sized normalized dataset that I believe we can work with 
 
 ## Lets check for trends ##
@@ -118,7 +118,7 @@ sns.boxplot(x=ma_df['FullCashValue'])
 sns.pairplot(ma_df[["LivableSqFootage", "ConstructionYear", "LandSize", 'FullCashValue' ]], diag_kind="kde")
 ```
 
-[.]()
+[.](<a href="https://imgur.com/Ln92tSX"><img src="https://i.imgur.com/Ln92tSXs.jpg" title="source: imgur.com" /></a>)
  - There is something looking like a trend in the top right there with our target and expected primary attribute (let's imagine we didn't have a list above showing this)
 
 ## Splitting our X & Y, Normalizing the Data, and splitting it up into train and testing versions ##
