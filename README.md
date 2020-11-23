@@ -118,7 +118,7 @@ sns.boxplot(x=ma_df['FullCashValue'])
 sns.pairplot(ma_df[["LivableSqFootage", "ConstructionYear", "LandSize", 'FullCashValue' ]], diag_kind="kde")
 ```
 
-[.](<a href="https://imgur.com/Ln92tSX"><img src="https://i.imgur.com/Ln92tSXb.jpg" title="source: imgur.com" /></a>)
+[.](<a href="https://imgur.com/Ln92tSX"><img src="https://i.imgur.com/Ln92tSX.jpg" title="source: imgur.com" /></a>)
  - There is something looking like a trend in the top right there with our target and expected primary attribute (let's imagine we didn't have a list above showing this)
 
 ## Splitting our X & Y, Normalizing the Data, and splitting it up into train and testing versions ##
